@@ -1,0 +1,33 @@
+{
+    "name": "Twitter AI Reply",
+    "version": "1.0.0",
+    "description": "AI generated replies for Twitter",
+    "manifest_version": 3,
+    "author": "Null Vector",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "src/inject/content-script.js"
+            ],
+            "css": [
+                "src/inject/main.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["src/inject/main.css"],
+            "matches": [
+                "https://twitter.com/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting"
+    ]
+}
