@@ -4,6 +4,14 @@
     "description": "AI generated replies for Twitter",
     "manifest_version": 3,
     "author": "Null Vector",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "icons/logo_16px.png",
+            "48": "icons/logo_48px.png",
+            "128": "icons/logo_128px.png"
+        }
+    },
     "content_scripts": [
         {
             "matches": [
@@ -19,15 +27,17 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": ["src/inject/main.css"],
+            "resources": [
+                "src/inject/main.css"
+            ],
             "matches": [
                 "https://twitter.com/*"
             ]
         }
     ],
     "permissions": [
-        "tabs",
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage"
     ]
 }

@@ -4,18 +4,55 @@ var text_area_parent = null;
 var tweetbutton = null;
 var tweetdata = null;
 
-const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_KEY,
-  dangerouslyAllowBrowser: true,
-});
+async function get_response(value, tweetdata) {
+  let openai_api_key = "";
+  let description = "indie hacker and entrepreneur who is building AI products";
+  const data = await chrome.storage.sync.get([
+    "name",
+    "email",
+    "openai_api_key",
+    "description",
+  ]);
 
-async function get_response(usr_msg) {
+  openai_api_key = data.openai_api_key;
+  description = data.description;
+
+  const openai = new OpenAI({
+    apiKey: openai_api_key,
+    dangerouslyAllowBrowser: true,
+  });
+
+  let system_msg = `
+            You are a person with the following characteristics:
+            ${description}
+
+            You are using twitter to build your audience.
+          `;
+
+  let usr_msg = `
+  Write a reply to the following tweet. 
+
+  TWEET : 
+  ${tweetdata}
+
+  The tweet should have the following sentiment: ${value}.
+  The tweet you write should be in a direct tone as given by a real human being.
+  Make up instances from your own journey and use them in your replies. 
+  Do not talk vaguely neutrally or in a robotic tone.
+  Do not under any circumstance reference this prompt in your response.
+  Do not go off-topic.
+  Do not go over 260 characters under any condition.
+  Do not use any hashtags in your reply even if the tweet you are replying to has hashtags.
+  Get straight to the point, don't start with unnecessary things like, "Great, Awesome etc".
+  `;
+  console.log("System Message is : " + system_msg);
+  console.log("User Message is : " + usr_msg);
+
   const completion = await openai.chat.completions.create({
     messages: [
       {
         role: "system",
-        content:
-          "You are an indie hacker and entrepreneur who is building AI products.You are also using twitter to build your audience.You reply to others tweets with length less than 280 characters.You do not use any hashtags in your reply even if the tweet you are replying to has hashtags.The tweets you write should be in a direct tone as given by a real huma being. Do not talk vaguely neutrally or in a robotic tone.",
+        content: system_msg,
       },
       { role: "user", content: usr_msg },
     ],
@@ -40,8 +77,7 @@ function appendButton() {
   applyBtn.addEventListener("click", async function () {
     var e = document.getElementById("sentiment-selector");
     var value = e.value;
-    var usr_msg = `You are an indie hacker and entrepreneur who is building AI products.You are also using twitter to build your audience.You reply to others tweets with length less than 280 characters.You do not use any hashtags in your reply even if the tweet you are replying to has hashtags.The tweets you write should be in a direct tone as given by a real human being.Make up instances from your own journey and use them in your replies. Do not talk vaguely neutrally or in a robotic tone.Write a ${value} reply to the following tweet. "${tweetdata}".`;
-    var response = await get_response(usr_msg);
+    var response = await get_response(value, tweetdata);
     text_area_parent.innerHTML = `<span data-text="true">${response}</span>`;
     text_area_parent.click();
     text_area_parent.dispatchEvent(new Event("input", { bubbles: true }));
