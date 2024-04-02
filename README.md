@@ -33,3 +33,8 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 ## Disclaimer
 
 The Twitter AI Reply Chrome Extension is an unofficial tool and is not affiliated with X. Use it responsibly and ensure that the generated replies align with X's community guidelines and policies.
+
+## Connect with Me
+
+If you liked my work, pls star it! This helps me know if I should build more stuff like this :)
+You can connect with me on [twitter](https://twitter.com/proxy_vector) 
