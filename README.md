@@ -4,9 +4,9 @@
 This [Twitter AI Reply Chrome Extension](https://chrome.google.com/webstore/detail/xreplygpt/ajjgpcaiofpdenhkmabcadabajmimpdk/) tool enhances the user's Twitter experience by offering smart, AI-generated reply suggestions for tweets. Designed to integrate seamlessly with Twitter's web interface, the extension uses advanced LLM models to analyze tweets and generate contextually relevant, witty, and engaging replies. Whether the user is looking to save time, find the perfect response, or simply boost their creativity on the platform, "AI Tweet Reply Assistant" provides them with instant suggestions at the click of a button. This extension is a go-to tool for elevating the user's Twitter interactions, making it easier than ever to engage with their audience and the Twitter community.
 
 ## Links
-- ![🔗 Chrome Store](https://chrome.google.com/webstore/detail/xreplygpt/ajjgpcaiofpdenhkmabcadabajmimpdk/)
-- ![🔗 Youtube Video](https://www.youtube.com/watch?v=nJZ6UyEtyjU)
-- ![🔗 Website](https://marcolivierbouch.github.io/XReplyGPT/)
+- ![Chrome Store](https://chrome.google.com/webstore/detail/xreplygpt/ajjgpcaiofpdenhkmabcadabajmimpdk/)
+- ![Youtube Video](https://www.youtube.com/watch?v=nJZ6UyEtyjU)
+- ![Website](https://marcolivierbouch.github.io/XReplyGPT/)
 
 ## How it works?
 1. Create an OpenAI API key [here](https://platform.openai.com/account/api-keys). Make sure you have a paid account or it won't work.
