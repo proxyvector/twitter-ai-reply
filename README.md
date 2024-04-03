@@ -1,10 +1,10 @@
 <h1>Twitter AI Reply</h1>
 
 ## Description
-This [Twitter AI Reply Chrome Extension](https://chrome.google.com/webstore/detail/xreplygpt/ajjgpcaiofpdenhkmabcadabajmimpdk/) tool enhances the user's Twitter experience by offering smart, AI-generated reply suggestions for tweets. Designed to integrate seamlessly with Twitter's web interface, the extension uses advanced LLM models to analyze tweets and generate contextually relevant, witty, and engaging replies. Whether the user is looking to save time, find the perfect response, or simply boost their creativity on the platform, "AI Tweet Reply Assistant" provides them with instant suggestions at the click of a button. This extension is a go-to tool for elevating the user's Twitter interactions, making it easier than ever to engage with their audience and the Twitter community.
+This [Twitter AI Reply Chrome Extension](https://chromewebstore.google.com/detail/twitter-ai-reply/fdogabfcglaladeknalpmdgpodkbafio) tool enhances the user's Twitter experience by offering smart, AI-generated reply suggestions for tweets. Designed to integrate seamlessly with Twitter's web interface, the extension uses advanced LLM models to analyze tweets and generate contextually relevant, witty, and engaging replies. Whether the user is looking to save time, find the perfect response, or simply boost their creativity on the platform, "AI Tweet Reply Assistant" provides them with instant suggestions at the click of a button. This extension is a go-to tool for elevating the user's Twitter interactions, making it easier than ever to engage with their audience and the Twitter community.
 
 ## Links
-- 🔗 [Chrome Store](https://chrome.google.com/webstore/detail/xreplygpt/ajjgpcaiofpdenhkmabcadabajmimpdk/)
+- 🔗 [Chrome Store](https://chromewebstore.google.com/detail/twitter-ai-reply/fdogabfcglaladeknalpmdgpodkbafio)
 - 🔗 [Youtube Video](https://www.youtube.com/watch?v=nJZ6UyEtyjU)
 - 🔗 [Website](https://marcolivierbouch.github.io/XReplyGPT/)
 
