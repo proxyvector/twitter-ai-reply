@@ -5,8 +5,8 @@ This [Twitter AI Reply Chrome Extension](https://chromewebstore.google.com/detai
 
 ## Links
 - 🔗 [Chrome Store](https://chromewebstore.google.com/detail/twitter-ai-reply/fdogabfcglaladeknalpmdgpodkbafio)
-- 🔗 [Youtube Video](https://www.youtube.com/watch?v=nJZ6UyEtyjU)
-- 🔗 [Website](https://marcolivierbouch.github.io/XReplyGPT/)
+- 🔗 [Youtube Video](https://www.youtube.com/watch?v=U6k6nPr13dE)
+- 🔗 [Website](https://chromewebstore.google.com/detail/twitter-ai-reply/fdogabfcglaladeknalpmdgpodkbafio)
 
 ## How it works?
 1. Create an OpenAI API key [here](https://platform.openai.com/account/api-keys). Make sure you have a paid account or it won't work.
@@ -22,7 +22,7 @@ This [Twitter AI Reply Chrome Extension](https://chromewebstore.google.com/detai
 ## Demo
 Here is a quick demo of the extension in action:
 
-![demo](./chrome_img/demo.gif)
+![demo](https://www.youtube.com/watch?v=U6k6nPr13dE)
 
 
 ## Feedback and Support
