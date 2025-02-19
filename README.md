@@ -7,7 +7,7 @@ This [Twitter AI Reply Chrome Extension](https://chromewebstore.google.com/detai
 - 🔗 [Chrome Store](https://chromewebstore.google.com/detail/twitter-ai-reply/fdogabfcglaladeknalpmdgpodkbafio)
 - 🔗 [Youtube Video](https://www.youtube.com/watch?v=U6k6nPr13dE)
 
-## How it works?
+## How it works ?
 1. Create an OpenAI API key [here](https://platform.openai.com/account/api-keys). Make sure you have a paid account or it won't work.
 2. Click on the chrome app in your browser and save all the details in the respective sections.
 3. if you want personalised replies to your tweets then fill in some details about yourself, like your gender, age and profession
